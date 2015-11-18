@@ -7,48 +7,75 @@ public class MyProxy {
 	private String province;
 	private String district;
 	private String isp;
+	private String city;
+
 	public String getIp() {
 		return ip;
 	}
+
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
+
 	public int getPort() {
 		return port;
 	}
+
 	public void setPort(int port) {
 		this.port = port;
 	}
+
 	public String getCountry() {
 		return country;
 	}
+
 	public void setCountry(String country) {
 		this.country = country;
 	}
+
 	public String getProvince() {
 		return province;
 	}
+
 	public void setProvince(String province) {
 		this.province = province;
 	}
+
 	public String getDistrict() {
 		return district;
 	}
+
 	public void setDistrict(String district) {
 		this.district = district;
 	}
+
 	public String getIsp() {
 		return isp;
 	}
+
 	public void setIsp(String isp) {
 		this.isp = isp;
 	}
+
+	public String getLocationStr() {
+
+		return country + " " + province + " " + city + " " + district + " "
+				+ isp;
+	}
+
 	@Override
 	public String toString() {
 		return "MyProxy [ip=" + ip + ", port=" + port + ", country=" + country
 				+ ", province=" + province + ", district=" + district
-				+ ", isp=" + isp + "]";
+				+ ", isp=" + isp + ", city=" + city + "]";
 	}
-	
-	
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
 }

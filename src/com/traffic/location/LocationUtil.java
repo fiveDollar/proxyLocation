@@ -37,7 +37,7 @@ public class LocationUtil {
 				}else if(string.contains("province")){
 					p.setProvince(lc);
 				}else if(string.contains("city")){
-					p.setCountry(lc);
+					p.setCity(lc);
 				}else if(string.contains("district")){
 					p.setDistrict(lc);
 				}else if(string.contains("isp")){
